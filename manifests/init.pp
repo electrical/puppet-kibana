@@ -75,12 +75,13 @@
 # * Richard Pijnenburg <mailto:richard@ispavailability.com>
 #
 class kibana(
-  $ensure      = $kibana::params::ensure,
-  $autoupgrade = $kibana::params::autoupgrade,
-  $status      = $kibana::params::status,
-  $version     = false,
-  $standalone  = true,
-  $config_file = false
+  $ensure       = $kibana::params::ensure,
+  $autoupgrade  = $kibana::params::autoupgrade,
+  $status       = $kibana::params::status,
+  $package_name = $kibana::params::package_name,
+  $version      = false,
+  $standalone   = true,
+  $config_file  = false
 ) inherits kibana::params {
 
   #### Validate parameters

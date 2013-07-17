@@ -50,7 +50,7 @@ class kibana::package {
   }
 
   # action
-  package { $kibana::params::package:
+  package { $kibana::package_name:
     ensure => $package_ensure,
   }
 
