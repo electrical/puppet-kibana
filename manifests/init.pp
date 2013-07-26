@@ -78,6 +78,7 @@ class kibana(
   $ensure      = $kibana::params::ensure,
   $autoupgrade = $kibana::params::autoupgrade,
   $status      = $kibana::params::status,
+  $pkg_source  = undef,
   $version     = false,
   $standalone  = true,
   $config_file = false
